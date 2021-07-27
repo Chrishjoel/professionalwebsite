@@ -1,0 +1,177 @@
+#form-overlay
+{   
+    position: absolute;
+    width: 40%;
+    height: 85vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.8);
+    z-index: 999;
+    box-shadow: 2px 2px 5px gray;
+    margin-right: 0px;
+    margin-top: 40px;
+}
+#form-overlay .close-icon{
+    position: absolute;
+    margin-left: 430px;
+    margin-top: -420px;
+    font-weight: lighter;
+    font-size: 25px;
+    cursor: pointer;
+}
+#form-overlay .close-icon:hover{
+    color: rgb(150, 182, 241);
+}
+#form-overlay .title{
+    position: absolute;
+    font-size: 30px;
+    margin-left: 20px;
+    margin-top: -350px;
+    color: royalblue;
+}
+#form-overlay .name
+{
+    position: absolute;
+    margin-top: -200px;
+    margin-left: 30px;
+}
+#form-overlay .name input{
+    border: none;
+    width: 300px;
+    border-bottom: 1px solid rgb(150, 182, 241);
+    background: transparent;
+    color: rgb(150, 182, 241);
+
+}
+
+#form-overlay .contact-num
+{
+        position: absolute;
+    margin-top: -50px;
+    margin-left: 30px;
+}
+#form-overlay .contact-num input{
+    border: none;
+    width: 300px;
+    border-bottom: 1px solid rgb(150, 182, 241);
+    background: transparent;
+    color: rgb(150, 182, 241);
+
+}
+
+#form-overlay .address
+{
+    position: absolute;
+    margin-top: 130px;
+    margin-left: 30px;
+}
+#form-overlay .address textarea{
+    border: none;
+    width: 300px;
+    border-bottom: 1px solid rgb(150, 182, 241);
+    background: transparent;
+    color: rgb(150, 182, 241);
+
+}
+
+#form-overlay .opinion{
+    position: absolute;
+    margin-top: 320px;
+    margin-left: 20px;
+    color: rgb(150, 182, 241);
+}
+.sub-btn
+{
+    position: absolute;
+    margin-top: 410px;
+    margin-left: 30px;
+}
+#form-overlay.active{
+    right: 0;
+}
+
+@media screen and (max-width:850px){
+    #form-overlay
+{   
+    position: absolute;
+    width: 60%;
+
+}
+
+}
+@media screen and (max-width:550px) {
+    #form-overlay
+    {   
+        position: absolute;
+        width: 70%;
+        height: 70vh;
+    
+    }
+    #form-overlay .close-icon{
+        position: absolute;
+        margin-left: 220px;
+        margin-top: -420px;
+        font-weight: lighter;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    #form-overlay .title {
+        position: absolute;
+        font-size: 20px;
+        margin-left: 15px;
+        margin-top: -350px;
+        color: royalblue;
+    }
+    #form-overlay .name {
+        position: absolute;
+        margin-top: -230px;
+        margin-left: 2px;
+    }
+    #form-overlay .name input {
+    border: none;
+    width: 215px;
+    border-bottom: 1px solid rgb(150, 182, 241);
+    background: transparent;
+    color: rgb(150, 182, 241);
+    font-size: 12px;
+    }
+    #form-overlay .contact-num {
+        position: absolute;
+        margin-top: -130px;
+        margin-left: 2px;
+    }
+    #form-overlay .contact-num input {
+    border: none;
+    width: 215px;
+    border-bottom: 1px solid rgb(150, 182, 241);
+    background: transparent;
+    color: rgb(150, 182, 241);
+    font-size: 12px;
+    }
+    #form-overlay .address {
+        position: absolute;
+        margin-top: 30px;
+        margin-left: 2px;
+    }
+    #form-overlay .address textarea {
+    border: none;
+    width: 215px;
+    border-bottom: 1px solid rgb(150, 182, 241);
+    background: transparent;
+    color: rgb(150, 182, 241);
+    font-size: 12px;
+    }
+    #form-overlay .opinion{
+    position: absolute;
+    margin-top: 240px;
+    margin-left: 20px;
+    color: rgb(150, 182, 241);
+    font-size: 12px;
+}
+.sub-btn {
+    position: absolute;
+    margin-top: 390px;
+    margin-left: 0px;
+}
+}

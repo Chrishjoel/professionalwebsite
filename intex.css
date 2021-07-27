@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+}
+#home{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    left: 0;
+    top: 0;
+    background: rgba(78, 78, 78, 0.8);
+    z-index: 1000;
+}
+#section1{
+    padding: 0;
+}
+.banner .video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 777;
+}
+.content-home
+{
+    position: absolute;
+    left: 40%;
+    top: 30%;
+    width: 55%;
+    height: 100vh;
+}
+.content-home span{
+    color: rgb(245, 91, 63);
+}
+.content-home h1:nth-child(1)
+{
+    font-size: 70px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    left: -10%;
+
+}
+.content-home h1:nth-child(2)
+{
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+    position: absolute;
+    left: -5%;
+    top: 20%;
+
+}
+.content-home h1:nth-child(3)
+{
+    font-size: 30px;
+    font-weight: normal;
+    color: white;
+    position: absolute;
+    left: 10%;
+    top: 30%;
+
+}
+.content-home h1:nth-child(3) span{
+    color: rgb(245, 91, 63);
+    font-weight: bold;
+}
+#navbar{
+    position: fixed;
+    left: -10%;
+    top: 50px;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    text-align: center;
+    width: 8%;
+    background: rgba(0,0,0,0.5);
+    z-index: 999;
+    
+
+}
+.navbar-side
+{
+    list-style: none;
+    margin: 0 5px;
+    padding: 0 5px;
+}
+.navbar-side li{
+    margin-top: 70px;
+    
+}
+.navbar-side li:nth-child(1)
+{
+    margin-top: 50px;
+}
+.navbar-side li a{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: white ;
+    transition: 0.5s ease-in-out;
+}
+.navbar-side li:hover a{
+    color: tomato;
+    font-size: 20px;
+    transition: 0.5s ease-in-out;
+}
+.btn span{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    color: white;
+    left: 8%;
+    top: 1%;
+}
+#navbar.active
+{
+    left: 0;
+}
+
+@media screen and (max-width:850px){
+    .content-home
+{
+    position: absolute;
+    left: 40%;
+    top: 30%;
+    width: 55%;
+    height: 100vh;
+}
+.content-home h1:nth-child(1)
+{
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    left: -20%;
+
+}
+.content-home h1:nth-child(2)
+{
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+    position: absolute;
+    left: -10%;
+    top: 20%;
+
+}
+.content-home h1:nth-child(3)
+{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    left: 4%;
+    top: 28%;
+
+}
+#navbar{
+    position: absolute;
+    left: -20%;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    height: 90vh;
+    text-align: center;
+    width: 15%;
+    background: rgba(0,0,0,0.5);
+    
+
+}
+.navbar-side li:nth-child(1)
+{
+    margin-top: 60px;
+}
+.navbar-side li a{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: white ;
+    margin-left: 2px;
+    transition: 0.5s ease-in-out;
+}
+.navbar-side li:hover a{
+    color: tomato;
+    font-size: 18px;
+    transition: 0.5s ease-in-out;
+}
+.btn span{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    color: white;
+    left: 15%;
+    top: 2%;
+}
+}
+@media screen and (max-width:550px){
+.header{
+        position: absolute;
+        width: 100%;
+        height: 50px;
+        left: 0;
+        top: 0;
+        background: rgba(78, 78, 78, 0.8);
+}
+    .content-home
+{
+    position: absolute;
+    left: 40%;
+    top: 30%;
+    width: 55%;
+    height: 100vh;
+}
+.content-home h1:nth-child(1)
+{
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    left: -40%;
+
+}
+.content-home h1:nth-child(2)
+{
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    position: absolute;
+    left: -25%;
+    top: 20%;
+
+}
+.content-home h1:nth-child(3)
+{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    left: -5%;
+    top: 25%;
+
+}
+#navbar{
+    position: absolute;
+    left: -20%;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    height: 92vh;
+    text-align: center;
+    width: 15%;
+    background: rgba(0,0,0,0.5);
+    
+
+}
+.navbar-side li:nth-child(1)
+{
+    margin-top: 80px;
+}
+.navbar-side li a{
+    font-size: 10px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: white;
+    margin-left: 0px;
+    transition: 0.5s ease-in-out;
+}
+.navbar-side li:hover a{
+    color: tomato;
+    font-size: 14px;
+    transition: 0.5s ease-in-out;
+}
+.btn span{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    color: white;
+    left: 15%;
+    top: 1%;
+}
+}
+
+
+
+/*   About    */
+
+
+
+#about
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: white;
+}
+.face
+{
+   position: absolute;
+   width: 1100px;
+   height: 800px;
+   left: 400px;
+   top: -250px;
+   filter: drop-shadow(10px 10px 20px rgba(0,0,0,0.8));
+}
+.content-about{
+    width: 55%;
+    height: 100vh;
+    position: absolute;
+    
+}
+.content-about h2{
+    font-size: 80px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    margin-top: 220px;
+    margin-left: 100px;
+    color: turquoise;
+    margin-bottom: 25px;
+    -webkit-background-clip : text;
+    -webkit-text-fill-color: transparent;
+    background-attachment: fixed;
+    
+}
+.aboutus .content-about h2{
+    background-image: url('water.jpg');
+}
+.content-about .para{
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 100px;
+}
+
+@media only screen and (max-width:850px){
+ 
+    #about
+    {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 380px;
+        position: relative;
+        overflow: hidden;
+        background: white;
+    }
+    .face
+    {
+       position: absolute;
+       width: 650px;
+       height: 500px;
+       left: 250px;
+       top: -150px !important;
+       filter: drop-shadow(10px 10px 20px rgba(0,0,0,0.8));
+    }
+    .content-about{
+        width: 55%;
+        height: 100vh;
+        float: left;
+    }
+    .content-about h2{
+        font-size: 40px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bolder;
+        margin-top: 60px;
+        margin-left: 20px;
+        color: teal;
+        margin-bottom: 25px;
+        
+    }
+    .content-about .para{
+        font-size: 14px;
+        font-weight: normal;
+        font-family: 'Poppins', sans-serif;
+        margin-left: 20px;
+    }
+    
+    }
+@media only screen and (max-width:550px){
+ 
+#about
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 380px;
+    position: relative;
+    overflow: hidden;
+    background: white;
+}
+.face
+{
+   position: absolute;
+   width: 550px;
+   height: 400px;
+   left: 5px;
+   top: -100px !important;
+   filter: drop-shadow(10px 10px 20px rgba(0,0,0,0.8));
+}
+.content-about{
+    width: 55%;
+    height: 100vh;
+    float: left;
+}
+.content-about h2{
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    margin-top: 60px;
+    margin-left: 20px;
+    color: teal;
+    margin-bottom: 25px;
+    
+}
+.content-about .para{
+    font-size: 14px;
+    font-weight: normal;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 20px;
+}
+
+}

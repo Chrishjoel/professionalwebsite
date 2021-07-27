@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="pencil.css">
+    <link rel="stylesheet" href="all.min.css">
+    <title>Pencil Sketches</title>
+</head>
+<body>
+    <div class="pencil">
+        <div class="container-fluid" id="pencil">
+            <h1>Pencil Sketches</h1>
+           <div class="row">
+
+               <div class="card1">
+                   <div class="image1">
+                    <img src="eye.jpg" id="allimg">
+                   </div>
+                   <div class="body1">
+                    <button type="button" class="btn btn-primary" id="buy-button">But it</button>
+                    <button type="button" class="btn btn-outline-primary" id="c1">Create own</button>
+                   </div>
+               </div>
+               <div class="card2">
+                <div class="image2">
+                    <img src="anupama.jpg" id="allimg">
+                </div>
+                <div class="body2">
+                    <button type="button" class="btn btn-primary" id="buy-button">But it</button>
+                    <button type="button" class="btn btn-outline-primary" id="c2">Create own</button>
+                </div>
+            </div>
+            <div class="card3">
+                <div class="image3">
+                    <img src="bike.jpg" id="allimg">
+                </div>
+                <div class="body3">
+                    <button type="button" class="btn btn-primary" id="buy-button">But it</button>
+                    <button type="button" class="btn btn-outline-primary" id="c3">Create own</button>
+                </div>
+            </div>
+            <div class="card4">
+                <div class="image4">
+                    <img src="master.jpg" id="allimg">
+                </div>
+                <div class="body4">
+                    <button type="button" class="btn btn-primary" id="buy-button">But it</button>
+                    <button type="button" class="btn btn-outline-primary" id="c4">Create own</button>
+                </div>
+            </div>
+            <div class="card5">
+                <div class="image5">
+                    <img src="p1.jpg" id="allimg">
+                </div>
+                <div class="body5">
+                    <button type="button" class="btn btn-primary" id="buy-button">But it</button>
+                    <button type="button" class="btn btn-outline-primary" id="c5">Create own</button>
+                </div>
+            </div>
+            <div class="card6">
+                <div class="image6">
+                    <img src="p2.jpg" id="allimg">
+                </div>
+                <div class="body6">
+                    <button type="button" class="btn btn-primary" id="buy-button">But it</button>
+                    <button type="button" class="btn btn-outline-primary" id="c6">Create own</button>
+                </div>
+            </div>
+            <div class="card7">
+                <div class="image7">
+                    <img src="tiger.jpg" id="allimg">
+                </div>
+                <div class="body7">
+                    <button type="button" class="btn btn-primary" id="buy-button">But it</button>
+                    <button type="button" class="btn btn-outline-primary" id="c7">Create own</button>
+                </div>
+            </div>
+            <div class="card8">
+                <div class="image8">
+                    <img src="p3.jpg" id="allimg">
+                </div>
+                <div class="body8">
+                    <button type="button" class="btn btn-primary" id="buy-button">But it</button>
+                    <button type="button" class="btn btn-outline-primary" id="c8">Create own</button>
+                </div>
+            </div>
+            <div class="card9">
+                <div class="image9">
+                    <img src="p4.jpg" id="allimg">
+                </div>
+                <div class="body9">
+                    <button type="button" class="btn btn-primary" id="buy-button">But it</button>
+                    <button type="button" class="btn btn-outline-primary" id="c9">Create own</button>
+                </div>
+            </div>
+            <div class="card10">
+                <div class="image10">
+                    <img src="p5.jpg" id="allimg">
+                </div>
+                <div class="body10">
+                    <button type="button" class="btn btn-primary" id="buy-button">But it</button>
+                    <button type="button" class="btn btn-outline-primary" id="c10">Create own</button>
+                </div>
+            </div>
+           </div>
+           
+           <form id="form-overlay">
+            <h2 class="close-icon"><i class="fas fa-times"></i></h2>    
+            <h2 class="title">Place your Order</h2>
+            <p class="name"><input type="text" placeholder="Name">
+            </p>
+            <p class="contact-num"><input type="text" placeholder="Phone Number">
+            </p>
+            <p class="address">
+            <textarea cols="30" rows="4" placeholder="Address"></textarea>
+            </p>
+            <p class="opinion">
+                <label>Do you like to post your portrait in our instagram page</label><br>
+                <input type="radio" name="insta post" value="yes" checked="yes"><label>Yes </label> 
+                <input type="radio" name="insta post" value="no"><label>No</label> 
+            </p>
+            <p class="sub-btn">
+               <input class="btn btn-primary" type="submit" value="Submit"  id="button">
+            </p>
+        </form>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        document.querySelectorAll("#buy-button").addEventListener("click", function(){
+    document.getElementById("form-overlay").style.display = "flex";
+})
+
+document.querySelector(".close-icon").addEventListener("click", function(){
+    document.getElementById("form-overlay").style.display = "none";
+})
+    </script>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</body>
+</html>
